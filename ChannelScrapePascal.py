@@ -138,7 +138,7 @@ def GetSched(IsShootmania: bool = False):
             except:
                 OutRealButActuallyThisTime[J] = [{str(I): {OutReal[I][J]: Urls[I][J]}}]
         
-            OutRealButActuallyThisTime[J].sort(key=lambda Y: int(list(Y)[0]))
+    OutRealButActuallyThisTime[J].sort(key=lambda Y: int(list(Y)[0]))
 
     with open("cache_names.json", "w") as CacheNamesFile:
         Dump = json.dumps(CacheNames, indent=4)
